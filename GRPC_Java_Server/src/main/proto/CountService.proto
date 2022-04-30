@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+package com.server.grpc;
+
+message CountResponse {
+  int32 countValue = 1;
+}
+
+service CountService{
+  rpc countToHundred(google.protobuf.Empty) returns (stream CountResponse);
+}
+
