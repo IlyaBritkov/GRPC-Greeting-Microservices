@@ -7,7 +7,7 @@ import com.server.grpc.GreetingServiceOuterClass.HelloResponse;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 
-public class Client {
+public class GreetingClient {
 
     public static void main(String[] args) {
         final ManagedChannel channel = ManagedChannelBuilder.forTarget("localhost:8080")
